@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito&family=Hind+Madurai:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto&display=swap');
+
+
+*{
+
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: whitesmoke;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.container{
+  width:350px;
+  padding:20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664);
+}
+
+.input-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  border:2px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.search-icon img{
+  width : 60px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.cityInput{
+  flex: 1;
+  height:30px;
+  border:none;
+  font-size: 14px;
+  outline:none;
+  padding:10px;
+}
+
+.image{
+  text-align: center;
+  height:150px;
+  margin-bottom: 10px;
+}
+
+.image img{
+  margin-top: 10px;
+  width:140px;
+  height:140px;
+}
+
+.temp, 
+.location,
+.country{
+  margin-top: 5px;
+  font-size: 20px;
+  color:red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.location{
+  color:rgb(182, 182, 15);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.country{
+  font-size: 18px;
+  color:green;
+  font-weight: 600;
+}
+
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  text-align: center;
+}
+
+
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+
+.cord div span{
+  font-size: 14px;
+}
+
+.cord div span:nth-child(2){
+  font-size: 17px;
+  font-weight: bold;
+  color:rgb(196, 6, 6);
+  padding-top: 5px;
+}
