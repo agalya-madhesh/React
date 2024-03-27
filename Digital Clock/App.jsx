@@ -20,7 +20,15 @@ function App() {
 
   const formatHour = (hour) => {
     return hour === 0 ? 12 : hour > 12 ? hour - 12 : hour;
-  }
+  };
+
+  const formatDate = (date) => {
+    const options = { weekday: "long", month: "long", day: "numeric", year: "numeric" };
+    return date.toLocaleDateString(undefined, options);
+  };
+  
+
+
   return (
     <>
       <div className="digital-clock">
@@ -28,9 +36,12 @@ function App() {
         <div className="time"> 
           {formatTimeWithLeadingZero(formatHour(currentTime.getHours()))} :
           {formatTimeWithLeadingZero(currentTime.getMinutes())} :
-          {formatTimeWithLeadingZero(currentTime.getSeconds())}
+          {formatTimeWithLeadingZero(currentTime.getSeconds())} 
+
+          {currentTime.getHours() >= 12 ? ' PM' : ' AM'}
+
         </div>
-        <div className="date">Wednesday, March 27, 2024</div>
+        <div className="date">{formatDate(currentTime)}</div>
       </div>
     </>
   )
