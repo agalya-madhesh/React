@@ -30,3 +30,15 @@
 }
 
 
+.cart-count{
+    background-color: yellowgreen;
+    height:20px;
+    width:20px;
+    display: inline-block;
+    padding:3px;
+    border-radius: 50%;
+    font-size: 11px;
+    text-align: center;
+    color:#222;
+    margin-right: 7px;
+}
