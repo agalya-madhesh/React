@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "name": "Pizza",
+      "amount": 199,
+      "shop": "Pizza Palace",
+      "ftype": "Italian",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6nX_0NOYZMJNFvKc665Is1WYxlGC3WMylQ&s",
+      "latest": "No"
+    },
+    {
+      "id": 2,
+      "name": "Burger",
+      "amount": 169,
+      "shop": "Burger Barn",
+      "ftype": "Fast Food",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOK-9ooVek1Gng3S8I42VyWwGWwE3yAe6hToSbux8d6g&s",
+      "latest": "No"
+    },
+    {
+      "id": 3,
+      "name": "Sushi",
+      "amount": 99,
+      "shop": "Sushi Bar",
+      "ftype": "Japanese",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOmB2yNoCR-mnvZpw4dDahv_40OhnyWMeVIveiYUrfw&s",
+      "latest": "No"
+    },
+    {
+      "id": 4,
+      "name": "Tacos",
+      "amount": 89,
+      "shop": "Taco Truck",
+      "ftype": "Mexican",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVV9llBzo6IXrC3PqKzcdnhKLDrVIUeuI6Yz9_MPQyqA&s",
+      "latest": "No"
+    },
+    {
+      "id": 5,
+      "name": "Pad Thai",
+      "amount": 129,
+      "shop": "Thai Cuisine",
+      "ftype": "Thai",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2ABmPuvUIlpIU_yN-Kin13Dlk0TL_UWcFUA3s8t3QAwhqGnUTA2CDKrHeQHNb90Htz8&usqp=CAU",
+      "latest": "No"
+    }
+  ]
+  
