@@ -18,7 +18,7 @@ function Counter() {
                 Click here
             </button>
         </div>
-        //onclick is an eventhandler that increments the count by 1 when clicked 
+        //onclick is an eventhandler that increments the previous value count by 1 when clicked 
     );
 }
 
