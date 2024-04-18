@@ -1,54 +1,40 @@
 import React from "react";
-import {
-  BiHome,
-  BiBookAlt,
-  BiMessage,
-  BiSolidReport,
-  BiStats,
-  BiTask,
-  BiHelpCircle,
-} from "react-icons/bi";
+import { Link } from 'react-router-dom';
+import { BiHome, BiTask, BiSolidReport, BiStats, BiMessage, BiHelpCircle } from "react-icons/bi";
 import '../Styles/Sidebar.css';
 
 function Sidebar() {
   return (
     <div className="menu">
       <div className="logo">
-        <BiBookAlt  className="logo-icon"/>
+        <BiHome className="logo-icon" />
         <h2>InnoTech</h2>
       </div>
-
       <div className="menu--list">
-        <a href="/" className="item active">
-          <BiHome className="icon"/>
+        <Link to="/" className="item active">
+          <BiHome className="icon" />
           Dashboard
-        </a>
-
-        <a href="/" className="item">
-          <BiTask className="icon"/>
-          Assingment
-        </a>
-
-        <a href="/" className="item">
-          <BiSolidReport className="icon"/>
+        </Link>
+        <Link to="/assignment" className="item">
+          <BiTask className="icon" />
+          Assignment
+        </Link>
+        <Link to="/reports" className="item">
+          <BiSolidReport className="icon" />
           Report
-        </a>
-
-        <a href="/" className="item">
-          <BiStats className="icon"/>
+        </Link>
+        <Link to="/stats" className="item">
+          <BiStats className="icon" />
           Stats
-        </a>
-
-        <a href="/" className="item">
-          <BiMessage className="icon"/>
+        </Link>
+        <Link to="/message" className="item">
+          <BiMessage className="icon" />
           Message
-        </a>
-
-        <a href="/" className="item">
-          <BiHelpCircle className="icon"/>
+        </Link>
+        <Link to="/help" className="item">
+          <BiHelpCircle className="icon" />
           Help
-        </a>
-
+        </Link>
       </div>
     </div>
   );
