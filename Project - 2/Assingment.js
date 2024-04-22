@@ -1,43 +1,70 @@
-import React from 'react';
-import '../Styles/Assignment.css';
-import AssignmentHeader from './AssignmentHeader';
+import React from "react";
+import { BiCalendarCheck } from "react-icons/bi";
+import AssignmentHeader from "./AssignmentHeader";
+import "../Styles/Assignment.css";
 
-function Assignment() {
-  const courses = [
-    {
-      title: 'React JS Course',
-      instructor: 'Harrish',
-      duration: '2 hours',
-      level: 'Intermediate',
-      rating: '4.5',
-    },
-    {
-      title: 'Python for Beginners',
-      instructor: 'Michael',
-      duration: '3.5 hours',
-      level: 'Beginner',
-      rating: '4.7',
-    },
-  ];
+const upcomingAssignments = [
+  {
+    id: 1,
+    subject: "Redux Integration",
+    description: "Implement Redux into an existing React application",
+    deadline: "May 10, 2024",
+  },
+  {
+    id: 2,
+    subject: "React Router",
+    description: "Integrate React Router to enable navigation ",
+    deadline: "May 15, 2024",
+  },
+  {
+    id: 3,
+    subject: "API Integration ",
+    description: "Fetch data from an external API using Axios ",
+    deadline: "May 20, 2024",
+  },
+  {
+    id: 4,
+    subject: "Styled Components",
+    description: "Utilize styled-components library to style ",
+    deadline: "May 25, 2024",
+  },
+  {
+    id: 5,
+    subject: "React Hooks",
+    description: "Convert class-based components to functional components ",
+    deadline: "May 30, 2024",
+  },
+  {
+    id: 6,
+    subject: "Authentication",
+    description: "Implement user authentication using Firebase ",
+    deadline: "June 5, 2024",
+  }
+];
 
+
+function AssignmentPage() {
   return (
-    <div className="assignment-container">
+    <div>
       <AssignmentHeader />
-      <div className="course-list">
-        {courses.map((course, index) => (
-          <div className="assignment-card" key={index}>
-            <div className="course-details">
-              <h2>{course.title}</h2>
-              <p>Instructor: {course.instructor}</p>
-              <p>Duration: {course.duration}</p>
-              <p>Level: {course.level}</p>
-              <p>Rating: {course.rating}</p>
+      <div className="upcoming-assignments">
+        <div className="assignment-container">
+          {upcomingAssignments.map((assignment) => (
+            <div className="cards" key={assignment.id}>
+              <div className="cards-covers">
+                <BiCalendarCheck className="card-icon" />
+              </div>
+              <div className="cards-title">
+                <h3>{assignment.subject}</h3>
+                <p>{assignment.description}</p>
+                <h5>Deadline : {assignment.deadline}</h5>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-export default Assignment;
+export default AssignmentPage;

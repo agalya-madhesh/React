@@ -40,3 +40,19 @@
     background-color:#27374d ;
     color:#dde6ed !important;
 }
+
+@media (max-width: 768px) {
+    .menu {
+      width: 100%;
+    }
+  
+    .item {
+      padding: 15px;
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+  }
