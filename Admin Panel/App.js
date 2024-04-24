@@ -1,10 +1,15 @@
 
 import './App.css';
+import MainDash from './Components/MainDash/MainDash';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-        Code Hub
+       <div className="AppGlass">
+          <Sidebar/>
+          <MainDash/>
+       </div>
     </div>
   );
 }
