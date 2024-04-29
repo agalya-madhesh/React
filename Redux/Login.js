@@ -4,7 +4,7 @@ function Login() {
   return (
     <div>
         <button>
-            Login
+            Login page
         </button>
     </div>
   )

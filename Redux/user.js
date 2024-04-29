@@ -21,4 +21,5 @@ export const userSlice = createSlice({
     }
 })
 
-export default userSlice.reducer; //allows other parts of your application access to this reducer, allowing them to include it in the overall state management
+export default userSlice.reducer; 
+//allows other parts of your application access to this reducer, allowing them to include it in the overall state management
