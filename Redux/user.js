@@ -21,5 +21,6 @@ export const userSlice = createSlice({
     }
 })
 
+export const { login } = userSlice.actions;
 export default userSlice.reducer; 
 //allows other parts of your application access to this reducer, allowing them to include it in the overall state management
