@@ -4,6 +4,8 @@ import {useParams} from 'react-router-dom';//to get the ID from the URL and then
 //from the URL to fetch and display the details of that particular product
 import Data from '../Data'
 import { useState } from 'react';
+import {useDispatch} from "react-redux";
+import { addItem, delItem} from "../Components/Redux/actions/index"
 
 function ProductDetail() {
     const[cartBtn, setCartBtn] = useState("Add to Cart") //to change the text of button we use useState
@@ -13,11 +15,15 @@ function ProductDetail() {
     const product = proDetail[0];
     console.log(product);
 
+    const dispatch = useDispatch() //to store use dispatch in a variable
+
     const handleCart = (product) => {
         if(cartBtn === "Add to Cart"){
+            dispatch(addItem(product))
             setCartBtn("Remove from Cart")
         }
         else{
+            dispatch(delItem(product))
             setCartBtn("Add to Cart")
         }
     }

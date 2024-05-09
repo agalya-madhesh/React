@@ -6,7 +6,7 @@ function About() {
     <div>
       <div className="container py-5 my-5">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 mb-4 mb-lg-0">
             <h1 className="text-primary fw-bold mb-4">About Us</h1>
             <p className="lead mb-4">
               Welcome to Apple Mart! At Apple Mart, we're dedicated to providing
@@ -28,7 +28,7 @@ function About() {
             <NavLink to="/contact" className="btn btn-outline-primary px-3">Contact Us</NavLink>
           </div>
           <div className="col-lg-6 d-flex justify-content-center align-items-center">
-            <img src="/Assets/abt.avif" alt="About us" className="img-fluid" style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px' }} />
+            <img src="/Assets/aboutt.jpg" alt="About us" className="img-fluid" style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px' }} />
           </div>
         </div>
       </div>

@@ -52,12 +52,12 @@ function Header() {
           </div>
 
               <Login />
-           
               <SignUp />
-            
               <CartBtn />
+            
       
         </div>
+
       </nav>
     </>
   );
