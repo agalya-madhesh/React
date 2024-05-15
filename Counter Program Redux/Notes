@@ -1,0 +1,15 @@
+Redux : library that helps manage all the data and state of the application 
+
+Store : holds all the state (data) of our app
+
+Actions : actions are like messages that we send to the store to tell it to change the state. Action is just an object with a type property (describes what kind of change you want to make) and sometimes a payload property (extra information the action might need to carry out the change)
+    Example : if adding a new item to a list, the payload might be the details of that item
+
+Reducer : special functions that take two things: the current state and an action. Their job is to look at the action and decide how to change the state based on it
+
+
+Flow of how it all works :
+
+State: This is what your data looks like right now.
+Action: This is the message saying what change you want to make.
+Reducer: This function gets both the current state and the action. It then makes a copy of the state and changes it according to the action's type and payload.
